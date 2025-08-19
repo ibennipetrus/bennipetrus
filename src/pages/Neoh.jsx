@@ -135,7 +135,7 @@ const Work = () => {
 
           <div className="relative w-full h-[60vh] rounded-2xl overflow-hidden">
             <iframe
-              src="https://player.vimeo.com/video/1110988468?autoplay=1&muted=1&loop=1&background=1"
+              src="ttps://player.vimeo.com/video/1110988468?autoplay=1&muted=1&loop=1&background=1"
               title="NEOH-Bianca"
               className="w-full h-full"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
