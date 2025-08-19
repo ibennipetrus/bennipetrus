@@ -1,0 +1,368 @@
+@import "tailwindcss";
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --dark-bg-color: hsl(0 0% 7.5%);
+  --dark-text-color: hsl(0 0% 90%);
+  --dark-text-secondary: hsl(0 0% 60%);
+  --dark-text-tertiary: hsl(0 0% 40%);
+  --dark-btn-bg: hsl(0 0% 12.5%);
+  --dark-card-bg: hsl(0 0% 10%);
+  --dark-card-border: hsl(0 0% 15%);
+}
+
+body {
+  font-family: "Urbanist", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+}
+
+h1 {
+  font-family: "Urbanist", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Optional: unterschiedliche Gewichtungen oder Styles */
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-family: "Urbanist", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Optional: unterschiedliche Gewichtungen oder Styles */
+  font-weight: 500;
+}
+
+p {
+  font-family: "Urbanist", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Optional: unterschiedliche Gewichtungen oder Styles */
+  font-weight: 300;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-bg-color);
+}
+
+body.no-scroll {
+  overflow: hidden !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform, opacity;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10em 1em;
+}
+
+.spacer {
+  height: 20px;
+}
+
+h1 {
+  color: var(--dark-text-color);
+  position: relative;
+  font-size: 3.5rem;
+  line-height: 1;
+  will-change: transform, opacity;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--dark-text-color);
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  will-change: transform, opacity;
+}
+
+h3 {
+  color: var(--dark-text-color);
+}
+
+p {
+  text-decoration: none;
+  color: var(--dark-text-color);
+  position: relative;
+  font-size: 0.8rem;
+  will-change: transform, opacity;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 1em 0;
+  margin-top: 0.3em;
+  background-color: var(--dark-btn-bg);
+  outline: none;
+  border: none;
+  color: var(--dark-text-color);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 3em 1em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* css for sample project / without img for customizablity*/
+
+.sp-title {
+  height: max-content;
+  padding: 0 0;
+}
+
+.sp-title h1 {
+  font-size: 5rem;
+  line-height: 1.125;
+}
+
+.sp-banner {
+  height: 75vh;
+}
+
+.sp-details {
+  height: max-content;
+  padding: 2em 0;
+}
+
+.sp-details .container {
+  display: flex;
+}
+
+.sp-details .container > div {
+  flex: 1;
+  gap: 2em;
+}
+
+p.sp-details-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+
+.sp-tags {
+  margin-bottom: 2em;
+}
+
+.sp-tags p {
+  line-height: 1.65;
+}
+
+.sp-date p {
+  margin-bottom: 4em;
+  color: var(--dark-text-secondary);
+}
+
+.sp-details-col {
+  text-align: justify;
+}
+
+.sp-details-col:nth-child(2) p:nth-child(1) {
+  margin-bottom: 2em;
+}
+
+.sp-details-col:nth-child(2) p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.65;
+}
+
+.sp-info {
+  height: max-content;
+  padding: 0 0;
+}
+
+.sp-info .container {
+  display: flex;
+  gap: 2em;
+}
+
+.sp-info .container > div {
+  flex: 1;
+}
+
+.sp-info-title h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.sp-info-desc p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.credits {
+  height: max-content;
+}
+
+.credits h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2em;
+}
+
+.credits-row {
+  display: flex;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+.credits-col {
+  flex: 1;
+}
+
+.credits-header p {
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+.credits-copy p {
+  font-size: 0.95rem;
+}
+
+.credits .divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 2.5em 0;
+}
+
+.next-project {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-project-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.next-project .container {
+  position: relative;
+  padding: 0 1em;
+  z-index: 1;
+}
+
+.next-project-header {
+  width: 75%;
+  display: flex;
+  gap: 0.75em;
+}
+
+.next-project-title h1 {
+  line-height: 1.25;
+}
+
+.next-project-icon {
+  position: relative;
+  top: 8px;
+}
+
+@media (max-width: 900px) {
+  .sp-title {
+    height: max-content;
+    padding: 6em 0;
+  }
+
+  .sp-title .container {
+    padding-bottom: 0;
+  }
+
+  .sp-title .container h1 {
+    font-size: 3rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .container h2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .sp-title .container p {
+    width: 90%;
+    margin: auto;
+  }
+
+  .credits-col p {
+    width: 90%;
+    margin: auto;
+  }
+
+  .sp-details-col p {
+    width: 90%;
+    margin: auto;
+  }
+
+  .sp-info-title h3 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .sp-info-desc p {
+    width: 90%;
+    margin: auto;
+  }
+
+  .sp-banner {
+    height: auto;
+  }
+
+  .sp-banner img {
+    height: 60vh;
+  }
+
+  .sp-details {
+    padding: 4em 0;
+  }
+
+  .sp-details .container {
+    flex-direction: column-reverse;
+    gap: 4em;
+  }
+
+  .sp-date p {
+    margin-bottom: 0em;
+    color: var(--dark-text-secondary);
+  }
+
+  .sp-info .container {
+    flex-direction: column;
+  }
+
+  .credits-row {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .next-project-header {
+    width: 100%;
+  }
+}

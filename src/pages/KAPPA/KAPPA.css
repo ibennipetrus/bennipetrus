@@ -1,0 +1,114 @@
+.scroll-hold-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* optional: damit Body scrollt, keine overflow-hidden */
+}
+
+.browser-mockup {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  margin: 40px auto;
+  display: block;
+  transition: width 1.5s ease, height 1.5s ease, opacity 1.5s ease,
+    border-radius 1.5s ease;
+  height: 100%; /* Anfangshöhe */
+  opacity: 1;
+}
+
+.browser-mockup2 {
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* etwas kleiner als Viewport */
+}
+
+.browser-mockup.closed {
+  width: 320px; /* schmaler */
+  height: 180px; /* niedriger */
+  opacity: 0.85; /* leicht transparent */
+  border-radius: 8px; /* nur leicht abgerundet */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.browser-mockup video {
+  width: 100%;
+  height: calc(100% - 35px);
+  object-fit: cover;
+  transition: height 0.5s ease;
+}
+
+.top-bar {
+  height: 35px;
+  background: #f5f5f7;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 6px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.dot.red {
+  background-color: #ff5f56;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.dot.red.pressed {
+  transform: scale(0.8);
+  background-color: #cc4944; /* etwas dunkleres Rot */
+  box-shadow: inset 0 0 6px #a03030;
+}
+
+.image-scroll-container {
+  overflow-y: auto;
+  height: 80vh; /* feste Höhe */
+  padding: 0;
+}
+
+.scroll-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kappa-invert {
+  filter: invert(1) grayscale(0.5);
+}

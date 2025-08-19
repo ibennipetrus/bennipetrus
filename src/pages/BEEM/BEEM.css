@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+  /* Auf Mobile: Hover nicht relevant, Blur-Bilder animieren von 1 bis 0 und zurück */
+
+  /* Alle Blur-Bilder sollen initial opacity 1 haben */
+  .group:hover .group-hover\\:opacity-0 {
+    opacity: 1 !important; /* Hover soll keine Wirkung auf Mobile haben */
+  }
+
+  /* Animation für jedes Bild mit Delay */
+  .mobile-animate-blur-1 {
+    animation: blurFade 2s infinite;
+    animation-delay: 0s;
+  }
+  .mobile-animate-blur-2 {
+    animation: blurFade 2s infinite;
+    animation-delay: 1s;
+  }
+  .mobile-animate-blur-3 {
+    animation: blurFade 2s infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes blurFade {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+.group:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
