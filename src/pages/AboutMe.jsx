@@ -4,11 +4,11 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 
 // Icons im public-Folder ablegen
 const iconsArray = [
-  "/public/Aboutme/Icon1.png",
-  "/public/Aboutme/Icon2.png",
-  "/public/Aboutme/Icon3.png",
-  "/public/Aboutme/Icon4.png",
-  "/public/Aboutme/Icon5.png",
+  "/Aboutme/Icon1.png",
+  "/Aboutme/Icon2.png",
+  "/Aboutme/Icon3.png",
+  "/Aboutme/Icon4.png",
+  "/Aboutme/Icon5.png",
 ];
 
 const skills = [
