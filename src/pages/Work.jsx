@@ -37,9 +37,14 @@ const Work = () => {
     workDate,
     type,
     url,
+    extraClass,
   }) => {
     return (
-      <div className="work-item relative border border-[var(--dark-card-border)] rounded-lg overflow-hidden mb-2 p-1">
+      <div
+        className={`work-item relative border border-[var(--dark-card-border)] rounded-lg overflow-hidden mb-2 p-1 ${
+          extraClass || ""
+        }`}
+      >
         <div className="relative">
           <div
             className="w-full overflow-hidden rounded-lg"
@@ -193,6 +198,7 @@ const Work = () => {
           workDate="june 2021"
           type="project"
           url="/Zenitblau"
+          extraClass="mb-[250px] md:mb-2"
         />
       </div>
     </div>
