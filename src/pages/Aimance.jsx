@@ -98,8 +98,8 @@ const Work = () => {
           </div>
         </section>
 
-        <section className="py-16 flex justify-center">
-          <div className="relative w-[80%] h-[60vh] aspect-video rounded-2xl  overflow-hidden border-0">
+        <section className="py-8 md:py-16 flex justify-center">
+          <div className="relative w-[80%] h-[60vh] aspect-video rounded-2xl overflow-hidden border-0">
             <iframe
               src="https://player.vimeo.com/video/1110880539?autoplay=1&muted=1&loop=1&background=1"
               title="aimance-SalesPitch (1)"
