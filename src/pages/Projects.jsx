@@ -101,7 +101,7 @@ const Projects = () => {
   const scrambledProjects = useMultipleScrambles(projectData);
 
   return (
-    <div className="w-full md:w-3/4 mx-auto px-4 py-4 md:py-40">
+    <div className="w-full md:w-3/4 mx-auto px-4 py-4 md:py-40 pb-[120px]">
       {scrambledProjects.map((project, index) => (
         <Link to={project.path} key={index}>
           <div className="relative w-full flex items-center p-4 rounded-lg gap-2 overflow-hidden cursor-pointer hover:bg-[var(--dark-card-bg)]">
